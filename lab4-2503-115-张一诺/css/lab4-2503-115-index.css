@@ -1,0 +1,237 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "微软雅黑", sans-serif;
+    padding-top: 50px;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 0 20px;
+    line-height: 50px;
+    z-index: 99;
+}
+
+.logo {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav {
+    float: right;
+}
+
+.nav ul li {
+    float: left;
+    list-style: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.icon {
+    font-size: 20px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.icon:hover {
+    transform: rotate(360deg);
+}
+
+
+.banner {
+    width: 1200px;
+    height: 300px;
+    margin: 10px auto;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.banner-wrapper {
+    width: 100%;
+    height: 300%;
+    animation: slideUp 9s infinite;
+}
+
+.banner-wrapper img {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+
+@keyframes slideUp {
+    0%, 30% { transform: translateY(0); }
+    33%, 63% { transform: translateY(-300px); }
+    66%, 96% { transform: translateY(-600px); }
+    100% { transform: translateY(0); }
+}
+
+
+.container {
+    width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.left-sidebar {
+    position: relative;
+    float: left;
+    width: 200px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-right: 20px;
+    min-height: 500px;
+}
+
+.left-sidebar ul {
+    margin-top: 15px;
+}
+
+.left-sidebar ul li {
+    list-style: none;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.main-content {
+    float: left;
+    width: 700px;
+    margin-right: 20px;
+}
+
+
+.hot-book-list {
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.hot-book-item {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.hot-book-item img {
+    width: 100%;
+    height: 180px;
+    display: block;
+}
+
+.hot-book-item:hover {
+    transform: translateX(10px) scale(1.05); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+}
+
+
+.new-book {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.new-book th, .new-book td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.right-sidebar {
+    position: fixed;
+    right: 50px;
+    top: 100px;
+    width: 200px;
+    background-color: #fff3cd;
+    padding: 20px;
+    border: 1px solid #ffeeba;
+}
+
+
+.login-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 999;
+}
+
+.modal-box {
+    position: relative;
+    width: 400px;
+    background-color: #fff;
+    margin: 150px auto;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.login-form, .register-form {
+    text-align: center;
+}
+
+.login-form h3, .register-form h3 {
+    margin-bottom: 20px;
+}
+
+.login-form input, .register-form input {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 8px;
+}
+
+
+.login-btn {
+    padding: 8px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.login-btn:hover {
+    background: linear-gradient(45deg, #3498db, #9b59b6); 
+    transform: scale(1.1); 
+}
+
+.register-form button {
+    padding: 8px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+}
